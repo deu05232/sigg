@@ -18,7 +18,7 @@ from tevatron.retriever.arguments import ModelArguments, DataArguments, \
 from tevatron.retriever.dataset import EncodeDataset
 from tevatron.retriever.collator import VllmEncodeCollator
 from vllm import LLM
-from vllm.config import PoolerConfig
+#from vllm.config import PoolerConfig
 from vllm.inputs import token_inputs
 from vllm.lora.request import LoRARequest
 
@@ -64,20 +64,20 @@ def main():
     else:
         torch_dtype = 'float32'
 
-    if model_args.pooling.lower() == 'eos':
-        pooling_type = "LAST"
-    else:
-        pooling_type = model_args.pooling.upper()
+    #if model_args.pooling.lower() == 'eos':
+    #    pooling_type = "LAST"
+    #else:
+    #    pooling_type = model_args.pooling.upper()
         
-    pooler_config = PoolerConfig(pooling_type=pooling_type,
-                                 normalize=model_args.normalize)
+    #pooler_config = PoolerConfig(pooling_type=pooling_type,
+    #                             normalize=model_args.normalize)
 
     model = LLM(
         model=model_args.model_name_or_path,
         tokenizer=tokenizer_name,
         task="embed",
         enforce_eager=True,
-        override_pooler_config=pooler_config,
+        #override_pooler_config=pooler_config,
         dtype=torch_dtype,
         enable_lora=True if model_args.lora_name_or_path else False,
         max_lora_rank=model_args.lora_r
