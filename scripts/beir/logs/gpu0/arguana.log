@@ -1,0 +1,29 @@
+[GPU 0] Processing: arguana
+[GPU 0] Encoding corpus for arguana...
+bash: scripts/beir/encode_beir_corpus.sh: No such file or directory
+[GPU 0] Failed to encode corpus for arguana
+[GPU 0] Processing: arguana
+[GPU 0] Encoding corpus for arguana...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... arguana
+[GPU 0] Failed to encode corpus for arguana
+[GPU 0] Processing: arguana
+[GPU 0] Encoding corpus for arguana...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... arguana
+[GPU 0] Failed to encode corpus for arguana
+[GPU 0] Processing: arguana
+[GPU 0] Encoding corpus for arguana...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... arguana
+[GPU 0] Failed to encode corpus for arguana
+[GPU 0] Processing: arguana
+[GPU 0] Encoding corpus for arguana...
+Base model: meta-llmama/Llama-2-7b-hf
+Encoding BEIR corpus... arguana
+[GPU 0] Failed to encode corpus for arguana
+[GPU 0] Processing: arguana
+[GPU 0] Encoding corpus for arguana...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... arguana
+[GPU 0] Failed to encode corpus for arguana

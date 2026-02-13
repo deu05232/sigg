@@ -1,0 +1,5 @@
+[GPU 0] Processing: cqadupstack-programmers
+[GPU 0] Encoding corpus for cqadupstack-programmers...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... cqadupstack-programmers
+[GPU 0] Failed to encode corpus for cqadupstack-programmers

@@ -1,0 +1,29 @@
+[GPU 1] Processing: nq
+[GPU 1] Encoding corpus for nq...
+bash: scripts/beir/encode_beir_corpus.sh: No such file or directory
+[GPU 1] Failed to encode corpus for nq
+[GPU 1] Processing: nq
+[GPU 1] Encoding corpus for nq...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... nq
+[GPU 1] Failed to encode corpus for nq
+[GPU 1] Processing: nq
+[GPU 1] Encoding corpus for nq...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... nq
+[GPU 1] Failed to encode corpus for nq
+[GPU 1] Processing: nq
+[GPU 1] Encoding corpus for nq...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... nq
+[GPU 1] Failed to encode corpus for nq
+[GPU 1] Processing: nq
+[GPU 1] Encoding corpus for nq...
+Base model: meta-llmama/Llama-2-7b-hf
+Encoding BEIR corpus... nq
+[GPU 1] Failed to encode corpus for nq
+[GPU 1] Processing: nq
+[GPU 1] Encoding corpus for nq...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... nq
+[GPU 1] Failed to encode corpus for nq

@@ -1,0 +1,29 @@
+[GPU 0] Processing: trec-covid
+[GPU 0] Encoding corpus for trec-covid...
+bash: scripts/beir/encode_beir_corpus.sh: No such file or directory
+[GPU 0] Failed to encode corpus for trec-covid
+[GPU 0] Processing: trec-covid
+[GPU 0] Encoding corpus for trec-covid...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... trec-covid
+[GPU 0] Failed to encode corpus for trec-covid
+[GPU 0] Processing: trec-covid
+[GPU 0] Encoding corpus for trec-covid...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... trec-covid
+[GPU 0] Failed to encode corpus for trec-covid
+[GPU 0] Processing: trec-covid
+[GPU 0] Encoding corpus for trec-covid...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... trec-covid
+[GPU 0] Failed to encode corpus for trec-covid
+[GPU 0] Processing: trec-covid
+[GPU 0] Encoding corpus for trec-covid...
+Base model: meta-llmama/Llama-2-7b-hf
+Encoding BEIR corpus... trec-covid
+[GPU 0] Failed to encode corpus for trec-covid
+[GPU 0] Processing: trec-covid
+[GPU 0] Encoding corpus for trec-covid...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... trec-covid
+[GPU 0] Failed to encode corpus for trec-covid

@@ -1,0 +1,11 @@
+.idea/
+__pycache__/
+*.egg-info/
+retriever-*
+error_analysis
+faiss
+logs
+resources
+old
+results
+samaya-storage

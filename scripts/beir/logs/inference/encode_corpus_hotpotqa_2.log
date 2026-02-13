@@ -1,0 +1,4 @@
+[2026-02-13 03:10:01,857] [WARNING] [real_accelerator.py:209:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:02<00:02,  2.88s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.26s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:04<00:00,  2.35s/it]
+Repo card metadata block was not found. Setting CardData to empty.
+02/13/2026 03:11:38 - WARNING - huggingface_hub.repocard -   Repo card metadata block was not found. Setting CardData to empty.

@@ -1,0 +1,16 @@
+Thu Feb 12 18:20:50 UTC 2026: Completed fiqa
+Thu Feb 12 18:25:02 UTC 2026: Completed nfcorpus
+Thu Feb 12 18:29:30 UTC 2026: Completed scidocs
+Thu Feb 12 18:33:40 UTC 2026: Completed scifact
+Thu Feb 12 18:48:23 UTC 2026: Completed fiqa
+Thu Feb 12 20:57:05 UTC 2026: Completed fiqa
+Thu Feb 12 21:00:26 UTC 2026: Completed nfcorpus
+Thu Feb 12 22:21:14 UTC 2026: Completed fiqa
+Thu Feb 12 22:45:51 UTC 2026: Completed fiqa
+Thu Feb 12 22:59:02 UTC 2026: Completed nfcorpus
+Thu Feb 12 23:12:50 UTC 2026: Completed scidocs
+Thu Feb 12 23:36:02 UTC 2026: Completed scidocs
+Fri Feb 13 00:04:34 UTC 2026: Completed scifact
+Fri Feb 13 00:35:07 UTC 2026: Completed trec-covid
+Fri Feb 13 01:40:54 UTC 2026: Completed webis-touche2020
+Fri Feb 13 01:57:44 UTC 2026: Completed quora

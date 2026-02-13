@@ -1,0 +1,5 @@
+[GPU 1] Processing: cqadupstack-gis
+[GPU 1] Encoding corpus for cqadupstack-gis...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... cqadupstack-gis
+[GPU 1] Failed to encode corpus for cqadupstack-gis

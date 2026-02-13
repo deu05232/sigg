@@ -1,0 +1,29 @@
+[GPU 0] Processing: fever
+[GPU 0] Encoding corpus for fever...
+bash: scripts/beir/encode_beir_corpus.sh: No such file or directory
+[GPU 0] Failed to encode corpus for fever
+[GPU 0] Processing: fever
+[GPU 0] Encoding corpus for fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... fever
+[GPU 0] Failed to encode corpus for fever
+[GPU 0] Processing: fever
+[GPU 0] Encoding corpus for fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... fever
+[GPU 0] Failed to encode corpus for fever
+[GPU 0] Processing: fever
+[GPU 0] Encoding corpus for fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... fever
+[GPU 0] Failed to encode corpus for fever
+[GPU 0] Processing: fever
+[GPU 0] Encoding corpus for fever...
+Base model: meta-llmama/Llama-2-7b-hf
+Encoding BEIR corpus... fever
+[GPU 0] Failed to encode corpus for fever
+[GPU 0] Processing: fever
+[GPU 0] Encoding corpus for fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... fever
+[GPU 0] Failed to encode corpus for fever

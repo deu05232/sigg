@@ -1,0 +1,29 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:   0%|          | 0/2 [07:12<?, ?it/s]
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/promptriever/tevatron/src/tevatron/retriever/driver/encode.py", line 115, in <module>
+    main()
+  File "/workspace/promptriever/tevatron/src/tevatron/retriever/driver/encode.py", line 64, in main
+    model = DenseModel.load(
+  File "/workspace/promptriever/tevatron/src/tevatron/retriever/modeling/encoder.py", line 161, in load
+    base_model = cls.TRANSFORMER_CLS.from_pretrained(model_name_or_path, **hf_kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 571, in from_pretrained
+    return model_class.from_pretrained(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/modeling_utils.py", line 279, in _wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4399, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/opt/conda/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4833, in _load_pretrained_model
+    disk_offload_index, cpu_offload_index = _load_state_dict_into_meta_model(
+  File "/opt/conda/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/conda/lib/python3.10/site-packages/transformers/modeling_utils.py", line 824, in _load_state_dict_into_meta_model
+    _load_parameter_into_model(model, param_name, param.to(param_device))
+  File "/opt/conda/lib/python3.10/site-packages/transformers/modeling_utils.py", line 712, in _load_parameter_into_model
+    module.load_state_dict({param_type: tensor}, strict=False, assign=True)
+  File "/opt/conda/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2576, in load_state_dict
+    if strict:
+KeyboardInterrupt

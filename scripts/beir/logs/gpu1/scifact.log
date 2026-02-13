@@ -1,0 +1,29 @@
+[GPU 1] Processing: scifact
+[GPU 1] Encoding corpus for scifact...
+bash: scripts/beir/encode_beir_corpus.sh: No such file or directory
+[GPU 1] Failed to encode corpus for scifact
+[GPU 1] Processing: scifact
+[GPU 1] Encoding corpus for scifact...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... scifact
+[GPU 1] Failed to encode corpus for scifact
+[GPU 1] Processing: scifact
+[GPU 1] Encoding corpus for scifact...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... scifact
+[GPU 1] Failed to encode corpus for scifact
+[GPU 1] Processing: scifact
+[GPU 1] Encoding corpus for scifact...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... scifact
+[GPU 1] Failed to encode corpus for scifact
+[GPU 1] Processing: scifact
+[GPU 1] Encoding corpus for scifact...
+Base model: meta-llmama/Llama-2-7b-hf
+Encoding BEIR corpus... scifact
+[GPU 1] Failed to encode corpus for scifact
+[GPU 1] Processing: scifact
+[GPU 1] Encoding corpus for scifact...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... scifact
+[GPU 1] Failed to encode corpus for scifact

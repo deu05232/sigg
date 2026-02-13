@@ -1,0 +1,2 @@
+[2026-02-13 03:12:05,506] [WARNING] [real_accelerator.py:209:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.56s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  3.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:08<00:00,  4.10s/it]

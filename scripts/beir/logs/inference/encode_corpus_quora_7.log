@@ -1,0 +1,18 @@
+[2026-02-13 01:40:57,879] [WARNING] [real_accelerator.py:209:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:06<00:06,  6.10s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.54s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:07<00:00,  3.92s/it]
+Repo card metadata block was not found. Setting CardData to empty.
+02/13/2026 01:42:52 - WARNING - huggingface_hub.repocard -   Repo card metadata block was not found. Setting CardData to empty.
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/opt/conda/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/workspace/promptriever/tevatron/src/tevatron/retriever/driver/encode.py", line 115, in <module>
+    main()
+  File "/workspace/promptriever/tevatron/src/tevatron/retriever/driver/encode.py", line 73, in main
+    encode_dataset = EncodeDataset(
+  File "/workspace/promptriever/tevatron/src/tevatron/retriever/dataset.py", line 172, in __init__
+    self.encode_data = self.encode_data.shard(
+  File "/opt/conda/lib/python3.10/site-packages/datasets/arrow_dataset.py", line 4798, in shard
+    raise ValueError("index should be in [0, num_shards-1]")
+ValueError: index should be in [0, num_shards-1]

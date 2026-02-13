@@ -1,0 +1,29 @@
+[GPU 1] Processing: climate-fever
+[GPU 1] Encoding corpus for climate-fever...
+bash: scripts/beir/encode_beir_corpus.sh: No such file or directory
+[GPU 1] Failed to encode corpus for climate-fever
+[GPU 1] Processing: climate-fever
+[GPU 1] Encoding corpus for climate-fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... climate-fever
+[GPU 1] Failed to encode corpus for climate-fever
+[GPU 1] Processing: climate-fever
+[GPU 1] Encoding corpus for climate-fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... climate-fever
+[GPU 1] Failed to encode corpus for climate-fever
+[GPU 1] Processing: climate-fever
+[GPU 1] Encoding corpus for climate-fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... climate-fever
+[GPU 1] Failed to encode corpus for climate-fever
+[GPU 1] Processing: climate-fever
+[GPU 1] Encoding corpus for climate-fever...
+Base model: meta-llmama/Llama-2-7b-hf
+Encoding BEIR corpus... climate-fever
+[GPU 1] Failed to encode corpus for climate-fever
+[GPU 1] Processing: climate-fever
+[GPU 1] Encoding corpus for climate-fever...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... climate-fever
+[GPU 1] Failed to encode corpus for climate-fever

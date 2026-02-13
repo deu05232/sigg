@@ -1,0 +1,5 @@
+[GPU 1] Processing: cqadupstack-unix
+[GPU 1] Encoding corpus for cqadupstack-unix...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... cqadupstack-unix
+[GPU 1] Failed to encode corpus for cqadupstack-unix

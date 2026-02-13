@@ -1,0 +1,18 @@
+# ===== model / checkpoint files =====
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+*.onnx
+# big stuff
+/data/
+/index/
+/checkpoints/
+*.pt
+*.pth
+*.bin
+*.faiss
+*.tar
+*.zip
+*.gz

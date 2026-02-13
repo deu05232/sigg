@@ -1,0 +1,29 @@
+[GPU 1] Processing: webis-touche2020
+[GPU 1] Encoding corpus for webis-touche2020...
+bash: scripts/beir/encode_beir_corpus.sh: No such file or directory
+[GPU 1] Failed to encode corpus for webis-touche2020
+[GPU 1] Processing: webis-touche2020
+[GPU 1] Encoding corpus for webis-touche2020...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... webis-touche2020
+[GPU 1] Failed to encode corpus for webis-touche2020
+[GPU 1] Processing: webis-touche2020
+[GPU 1] Encoding corpus for webis-touche2020...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... webis-touche2020
+[GPU 1] Failed to encode corpus for webis-touche2020
+[GPU 1] Processing: webis-touche2020
+[GPU 1] Encoding corpus for webis-touche2020...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... webis-touche2020
+[GPU 1] Failed to encode corpus for webis-touche2020
+[GPU 1] Processing: webis-touche2020
+[GPU 1] Encoding corpus for webis-touche2020...
+Base model: meta-llmama/Llama-2-7b-hf
+Encoding BEIR corpus... webis-touche2020
+[GPU 1] Failed to encode corpus for webis-touche2020
+[GPU 1] Processing: webis-touche2020
+[GPU 1] Encoding corpus for webis-touche2020...
+Base model: meta-llama/Llama-2-7b-hf
+Encoding BEIR corpus... webis-touche2020
+[GPU 1] Failed to encode corpus for webis-touche2020
