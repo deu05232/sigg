@@ -139,6 +139,9 @@ def main():
         chunks = list(chunk_iterable(all_batches, 8))   # 4개로 나누어서 진행
         
         for i, chunk in enumerate(chunks):
+            if i < 3:
+                continue ###################
+                
             lookup_indices = []
             vllm_inputs = []
             encoded = []

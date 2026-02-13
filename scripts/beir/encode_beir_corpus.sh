@@ -45,7 +45,7 @@ do
       --dataset_name "orionweller/beir-corpus" \
       --dataset_config "$dataset_name" \
       --dataset_split "train" \
-      --dataset_number_of_shards 2 \
+      --dataset_number_of_shards 8 \
       --dataset_shard_index ${s} \
       --encode_output_path $path_to_save/corpus_emb.${s}.pkl > logs/inference/encode_corpus_${dataset_name}_${s}.log 2>&1
   else
@@ -66,7 +66,7 @@ do
     --dataset_name "orionweller/beir-corpus" \
     --dataset_config "$dataset_name" \
     --dataset_split "train" \
-    --dataset_number_of_shards 2 \
+    --dataset_number_of_shards 8 \
     --dataset_shard_index ${s} \
     --encode_output_path $path_to_save/corpus_emb.${s}.pkl > logs/inference/encode_corpus_${dataset_name}_${s}.log 2>&1 &
   fi

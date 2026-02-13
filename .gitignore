@@ -9,6 +9,7 @@
 /data/
 /index/
 /checkpoints/
+/logs/
 *.pt
 *.pth
 *.bin
@@ -16,3 +17,4 @@
 *.tar
 *.zip
 *.gz
+*.pkl

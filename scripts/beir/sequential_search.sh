@@ -3,7 +3,8 @@ source ~/.bashrc
 echo "[DEBUG] HOST=$(hostname) HOME=$HOME USER=$USER"
 echo "[DEBUG] proxy env:"
 env | grep -i proxy || true
-export CUDA_VISIBLE_DEVICES="0,1"
+export CUDA_VISIBLE_DEVICES="0,1,2,3,4,5,6,7"
+
 
 source /opt/conda/etc/profile.d/conda.sh
 
@@ -25,9 +26,9 @@ mkdir -p $nickname
 mkdir -p logs/sequential
 
 datasets=(
-    #'fiqa'
-    #'nfcorpus'
-    #'scidocs'
+    'fiqa'
+    'nfcorpus'
+    'scidocs'
     'scifact'
     'trec-covid'
     'webis-touche2020'
@@ -77,25 +78,18 @@ search_and_evaluate() {
 
     echo "Evaluating ${dataset_name}${output_suffix}..."
 
-    QRELS_DIR="/workspace/promptriever/scripts/beir/anserini-tools/topics-and-qrels"
 
     if [[ "$dataset_name" != *"msmarco"* ]] && [[ "$dataset_name" != *"-dev"* ]]; then
-        qrels_path="${QRELS_DIR}/qrels.beir-v1.0.0-${dataset_name}.test.txt"
 
-        if [[ ! -f "$qrels_path" ]]; then
-            echo "[WARN] Missing qrels file: $qrels_path"
-            echo "[WARN] Skipping evaluation for ${dataset_name}${output_suffix}"
-            return
-        fi
-
-        conda activate pyserini && python -m pyserini.eval.trec_eval -c -m recall.100 -m ndcg_cut.10 \
-        "$qrels_path" \
+        conda activate pyserini && python -m pyserini.eval.trec_eval -c -mrecall.100 -mndcg_cut.10 \
+        "beir-v1.0.0-${dataset_name}-test" \
         "${nickname}/${dataset_name}/rank.${dataset_name}${output_suffix}.trec" \
         > "${nickname}/${dataset_name}/rank.${dataset_name}${output_suffix}.eval"
 
+
     elif [[ "$dataset_name" == *"-dev"* ]] && [[ "$dataset_name" != *"msmarco"* ]]; then
         new_dataset_name=$(echo "$dataset_name" | sed 's/-dev//')
-        conda activate pyserini && python -m pyserini.eval.trec_eval -c -m recall.100 -m ndcg_cut.10 \
+        conda activate pyserini && python -m pyserini.eval.trec_eval -c -mrecall.100 -mndcg_cut.10 \
         "resources/downloaded/qrels/${new_dataset_name}.qrels.sampled" \
         "${nickname}/${dataset_name}/rank.${dataset_name}${output_suffix}.trec" \
         > "${nickname}/${dataset_name}/rank.${dataset_name}${output_suffix}.eval"
@@ -134,8 +128,9 @@ for dataset in "${datasets[@]}"; do
     conda activate base
 
     # Encode corpus (GPU 0, 1 병렬 — 샤드 2개)
+    # Encode corpus (GPU 0~7 병렬 — 샤드 8개)
     missing=0
-    for i in {0..1}
+    for i in {0..7}
     do
         if [ ! -f "$dataset_path/corpus_emb.${i}.pkl" ]; then
             missing=1
@@ -162,23 +157,20 @@ for dataset in "${datasets[@]}"; do
         continue
     fi
 
-    # Encode queries with prompts (GPU 0, 1 번갈아 병렬)
     if [ -f "generic_prompts.csv" ]; then
         echo "Encoding queries with prompts for $dataset..."
-        MAX_JOBS=2
+        MAX_JOBS=8
         gpu_id=0
 
         while IFS= read -r prompt; do
-            # 빈 줄/공백 줄 스킵(옵션이지만 안전)
             [ -z "$prompt" ] && continue
 
-            # 실행 중인 job 수가 2개 이상이면 하나 끝날 때까지 대기
             while [ "$(jobs -pr | wc -l)" -ge "$MAX_JOBS" ]; do
                 wait -n
             done
 
             bash encode_beir_queries.sh "$base_model" "$dataset_path" "$retriever_name" "$dataset" "$gpu_id" "$prompt" &
-            gpu_id=$(( (gpu_id + 1) % 2 ))
+            gpu_id=$(( (gpu_id + 1) % 8 ))
         done < generic_prompts.csv
 
         wait
